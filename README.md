@@ -3,6 +3,7 @@
 ## Description
 This project implement a twitter with simple functions.  
 Built for 2018 fall distributed system course.
+
 It is divided into 3 stages:
 - [x] Build simple web application with database
 - [ ] Split off backend into a seperate service(using gPRC)
@@ -20,11 +21,12 @@ This is the first stage if the project.
 ## Instructions To Run
 **1. Install thrid-party packages**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go get github.com/gorilla/securecookie*  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go get github.com/go-sql-driver/mysql*
 **2. Clone the project into "/your/path"**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*git clone ...*   
 **3. Go into the src directory and run it**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*cd /your/path/src*  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go run main.go*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*cd /your/path/awesomeProject*  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go run web.go*
 
 ## Project Structure
 ```bash
@@ -33,17 +35,17 @@ This is the first stage if the project.
 │   ├── go-sql-driver
 │   └── gorilla 
 └── awesomeProject
-    ├── web.go    // go run web.go
+    ├── web.go     // go run web.go
     ├── auth       // "login & logout" module
     │   └── *auth.go
-    ├── action    // "presonal page" module
+    ├── action     // "presonal page" module
     │   ├── *action.go
     │   └── *page.go
     ├── storage    // processing data with database, insert, delete, update
     │   └── *storage.go
     ├── cookie     // parameter pass, session
     │   └── *cookie.go
-    └── show   // html and css templates
+    └── show       // html and css templates
         ├── *.html
         ├── css
         └── js
