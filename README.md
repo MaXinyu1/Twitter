@@ -29,23 +29,24 @@ This is the first stage if the project.
 ## Project Structure
 ```bash
 ├── README.md
-└── src
-    ├── main.go    // go run main.go
+├── github.com
+│   ├── go-sql-driver
+│   └── gorilla 
+└── awesomeProject
+    ├── web.go    // go run web.go
     ├── auth       // "login & logout" module
-    │   ├── cookie
-    │   │   └── cookie.go
-    │   └── *.go
-    ├── profile    // "presonal profile" module
-    │   └── *.go
-    ├── twitter    // "twitter page" module
-    │   └── *.go
-    ├── storage    // database , its functions and test
-    │   └── *.go
-    └── template   // html and css templates
+    │   └── *auth.go
+    ├── action    // "presonal page" module
+    │   ├── *action.go
+    │   └── *page.go
+    ├── storage    // processing data with database, insert, delete, update
+    │   └── *storage.go
+    ├── cookie     // parameter pass, session
+    │   └── *cookie.go
+    └── show   // html and css templates
         ├── *.html
-        └── static
-            ├── css
-            └── js
+        ├── css
+        └── js
 ```
 
 ## Team
