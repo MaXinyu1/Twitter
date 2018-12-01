@@ -22,6 +22,7 @@ This is the first stage if the project.
 **1. Install thrid-party packages**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go get github.com/gorilla/securecookie*  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*go get github.com/go-sql-driver/mysql*
+
 **2. Clone the project into "/your/path"**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*git clone ...*   
 **3. Go into the src directory and run it**  
